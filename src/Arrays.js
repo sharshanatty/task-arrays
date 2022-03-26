@@ -7,12 +7,9 @@ export function arraySorting(data) {
     return arr.join();
 }
 
-/*
-  В функцию arrayFiltering() приходит массив целых чисел.
-  Преобразуйте массив таким образом, чтобы все элементы массива, в которых содержатся числа более 100,
-  были бы удалены из массива, и верните его в качестве результата функции.
-*/
-export function arrayFiltering(data) {}
+export function arrayFiltering(data) {
+    return data.filter((i) => i <= 100);
+}
 
 /*
   В функцию arrayPushing() приходят два массива целых чисел размерностью 5 элементов.
