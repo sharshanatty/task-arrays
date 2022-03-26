@@ -1,9 +1,11 @@
-/*
-  В функцию arraySorting() приходит строка чисел с разделительными запятыми вида "1,2,33,0,17".
-  Преобразуте строку в массив чисел, отсортируйте их по возрастанию и верните строку с упорядоченными числами,
-  разделенными запятыми.
-*/
-export function arraySorting(data) {}
+export function arraySorting(data) {
+    let arr = data.split(',');
+    arr.map((string) => parseInt(string));
+    arr.sort(function (a, b) {
+        return a - b;
+    });
+    return arr.join();
+}
 
 /*
   В функцию arrayFiltering() приходит массив целых чисел.
