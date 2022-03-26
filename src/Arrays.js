@@ -11,9 +11,13 @@ export function arrayFiltering(data) {
     return data.filter((i) => i <= 100);
 }
 
-/*
-  В функцию arrayPushing() приходят два массива целых чисел размерностью 5 элементов.
-  Получите третий массив размерностью 10 элементов, в котором последовательно чередуются
-  значения из первых двух массивов, и верните его в качестве результата функции.
-*/
-export function arrayPushing(array1, array2) {}
+export function arrayPushing(array1, array2) {
+    let i = 0;
+    let res = [];
+    while (i < 5) {
+        res.push(array1[i]);
+        res.push(array2[i]);
+        i++;
+    }
+    return res;
+}
